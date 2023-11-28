@@ -1248,7 +1248,6 @@ def create_pool(
         }
 
     pool = Pool(
-        sequence_number=pool_details.sequence_number,
         name=pool_details.name,
         tournament=tournament,
         initial_seeding=dict(sorted(pool_seeding.items())),
@@ -1395,7 +1394,6 @@ def create_position_pool(
         pool_seeding[seed] = 0
 
     pool = PositionPool(
-        sequence_number=position_pool_details.sequence_number,
         name=position_pool_details.name,
         tournament=tournament,
         initial_seeding=dict(sorted(pool_seeding.items())),

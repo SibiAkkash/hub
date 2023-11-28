@@ -188,7 +188,6 @@ def update_seeding_on_teams_change(
 
 
 class Pool(models.Model):
-    sequence_number = models.PositiveIntegerField()
     name = models.CharField(max_length=2, default="NA")
     tournament = models.ForeignKey(Tournament, on_delete=models.CASCADE)
 
@@ -219,7 +218,6 @@ class Bracket(models.Model):
 
 
 class PositionPool(models.Model):
-    sequence_number = models.PositiveIntegerField()
     name = models.CharField(max_length=2, default="NA")
     tournament = models.ForeignKey(Tournament, on_delete=models.CASCADE)
 

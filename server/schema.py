@@ -530,7 +530,6 @@ class PoolSchema(ModelSchema):
 
 class PoolCreateSchema(Schema):
     seeding: list[int]
-    sequence_number: int
     name: str
 
 
@@ -565,7 +564,6 @@ class PositionPoolSchema(ModelSchema):
 
 class PositionPoolCreateSchema(Schema):
     seeding: list[int]
-    sequence_number: int
     name: str
 
 

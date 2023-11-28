@@ -95,7 +95,6 @@ def create_pool(name: str, tournament: Tournament, seeding: list[int]) -> Pool:
         }
 
     pool = Pool(
-        sequence_number=1,
         name=name,
         tournament=tournament,
         initial_seeding=dict(sorted(pool_seeding.items())),
